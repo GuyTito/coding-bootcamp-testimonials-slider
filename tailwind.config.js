@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         sans : ["'Inter'", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        "pattern-bg": "url('./images/pattern-bg.svg')",
+      },
     },
   },
   plugins: [],
