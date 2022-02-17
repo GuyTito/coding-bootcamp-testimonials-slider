@@ -470,12 +470,87 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-1\/2{
+  left: 50%;
+}
+
+.-top-8{
+  top: -2rem;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.-mt-5{
+  margin-top: -1.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
 
+.h-14{
+  height: 3.5rem;
+}
+
+.w-14{
+  width: 3.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -484,14 +559,47 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.rounded-full{
+  border-radius: 9999px;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.rounded-l-full{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-r-full{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-pattern-bg{
+  background-image: url('./images/pattern-bg.svg');
+}
+
+.bg-pattern-curve{
+  background-image: url('./images/pattern-curve.svg');
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-8{
@@ -499,17 +607,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
 }
 
 .text-center{
   text-align: center;
 }
 
-.text-\[32px\]{
-  font-size: 32px;
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .font-bold{
@@ -520,8 +646,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 300;
 }
 
-.font-medium{
-  font-weight: 500;
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-Dark-Blue\/90{
+  color: hsl(240 38% 20% / 0.9);
 }
 
 .text-Dark-Blue{
@@ -534,8 +664,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(240 18% 77% / var(--tw-text-opacity));
 }
 
-.text-Grayish-Blue\/50{
-  color: hsl(240 18% 77% / 0.5);
+.text-Dark-Blue\/50{
+  color: hsl(240 38% 20% / 0.5);
+}
+
+.text-Dark-Blue\/70{
+  color: hsl(240 38% 20% / 0.7);
+}
+
+.text-Dark-Blue\/60{
+  color: hsl(240 38% 20% / 0.6);
+}
+
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.shadow-\[-2px_42px_81px_-31px_rgb\(0\2c 0\2c 0\2c 0\.75\)\]{
+  --tw-shadow: -2px 42px 81px -31px rgb(0,0,0,0.75);
+  --tw-shadow-colored: -2px 42px 81px -31px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:bg-gray-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:font-bold:hover{
+  font-weight: 700;
+}
+
+.active\:bg-gray-200:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
