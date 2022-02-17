@@ -15,14 +15,25 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body class="md:text-[32px]">
+<body class="md:text-[32px] relative">
   <main>
-    <section class="px-10">
-      <div class="">
-        <img src="./images/image-tanya.jpg" alt="Tanya">
+    <section class="px-8 space-y-16 mt-5">
+      <div class="py-6 px-10 bg-pattern-bg bg-contain bg-no-repeat">
+        <img src="./images/image-tanya.jpg" alt="Tanya" class="shadow-[-2px_42px_81px_-31px_rgb(0,0,0,0.75)]">
+        <div class="flex justify-center -mt-5">
+          <div class="flex rounded-full bg-white">
+            <button class="p-3 pr-5 rounded-l-full">
+              <img src="./images/icon-prev.svg" alt="">
+            </button>
+            <button class="p-3 pl-5 rounded-r-full">
+              <img src="./images/icon-next.svg" alt="">
+            </button>
+          </div>
+        </div>
       </div>
-      <div class=" text-center space-y-5">
-        <p class="text-Grayish-Blue font-medium">
+      <div class=" text-center space-y-5 relative">
+        <img src="./images/pattern-quotes.svg" class="absolute w-14 h-14 left-1/2 -translate-x-1/2 -top-8" alt="">
+        <p class="text-Dark-Blue/90 font-medium">
           “I’ve been interested in coding for a while but never taken the jump, until now. 
           I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
           excited about the future.”
@@ -35,12 +46,13 @@
       </div>
     </section>
   
-    “ If you want to lay the best foundation possible I’d recommend taking this course. 
+    <!-- “ If you want to lay the best foundation possible I’d recommend taking this course. 
     The depth the instructors go into is incredible. I now feel so confident about 
     starting up as a professional developer. ”
   
     John Tarkpor
-    Junior Front-end Developer
+    Junior Front-end Developer -->
+    
   </main>
   
   <div class="attribution">
