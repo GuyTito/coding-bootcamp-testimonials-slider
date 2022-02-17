@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         "pattern-bg": "url('./images/pattern-bg.svg')",
+        "pattern-curve": "url('./images/pattern-curve.svg')",
       },
     },
   },
