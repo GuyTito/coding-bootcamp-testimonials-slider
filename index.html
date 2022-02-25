@@ -68,7 +68,11 @@
     let counter = 0
     const statement = document.querySelector('.statement')
     const next = document.querySelector('.next')
-    gsap.from(statement, {opacity: 0, duration: 1.5})
+
+    function fadeIn() {
+      gsap.from(statement, {opacity: 0, duration: 1.5})
+    }
+    fadeIn()
     next.addEventListener('click', ()=> {
       nextTestimony()
     })
@@ -76,10 +80,10 @@
       counter++
       if (counter == testimonies.length) {
         counter = 0
-        gsap.from(statement, {opacity: 0, duration: 1.5})
+        fadeIn()
         statement.innerText = testimonies[counter].text
       } else {
-        gsap.from(statement, {opacity: 0, duration: 1.5})
+        fadeIn()
         statement.innerText = testimonies[counter].text
       }
     }
