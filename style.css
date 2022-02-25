@@ -586,10 +586,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./images/pattern-bg.svg');
 }
 
-.bg-pattern-curve{
-  background-image: url('./images/pattern-curve.svg');
-}
-
 .bg-contain{
   background-size: contain;
 }
@@ -629,11 +625,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-medium{
   font-weight: 500;
 }
@@ -664,21 +655,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(240 18% 77% / var(--tw-text-opacity));
 }
 
-.text-Dark-Blue\/50{
-  color: hsl(240 38% 20% / 0.5);
-}
-
-.text-Dark-Blue\/70{
-  color: hsl(240 38% 20% / 0.7);
-}
-
 .text-Dark-Blue\/60{
   color: hsl(240 38% 20% / 0.6);
-}
-
-.underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .shadow-\[-2px_42px_81px_-31px_rgb\(0\2c 0\2c 0\2c 0\.75\)\]{
