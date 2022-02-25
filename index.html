@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
   </style>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body class="md:text-[32px] relative">
   <main>
@@ -67,6 +68,7 @@
     let counter = 0
     const statement = document.querySelector('.statement')
     const next = document.querySelector('.next')
+    gsap.from(statement, {opacity: 0, duration: 1.5})
     next.addEventListener('click', ()=> {
       nextTestimony()
     })
@@ -74,8 +76,10 @@
       counter++
       if (counter == testimonies.length) {
         counter = 0
+        gsap.from(statement, {opacity: 0, duration: 1.5})
         statement.innerText = testimonies[counter].text
       } else {
+        gsap.from(statement, {opacity: 0, duration: 1.5})
         statement.innerText = testimonies[counter].text
       }
     }
