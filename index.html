@@ -101,8 +101,22 @@
         assignValues()
       }
     }
+    function prevTestimony() {
+      counter--
+      if (counter == -1) {
+        counter = testimonies.length - 1
+        fadeIn()
+        assignValues()
+      } else {
+        fadeIn()
+        assignValues()
+      }
+    }
     next.addEventListener('click', ()=> {
       nextTestimony()
+    })
+    prev.addEventListener('click', ()=> {
+      prevTestimony()
     })
   </script>
 </body>
