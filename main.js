@@ -21,11 +21,6 @@ const job = document.getElementById('job')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const section = document.querySelector('section')
-
-function fadeIn() {
-  // gsap.from(section, {opacity: 0, duration: 1.5})
-}
-fadeIn()
 let index = 0
 assignValues()
 function assignValues() {
@@ -38,10 +33,8 @@ function nextTestimony() {
   index++
   if (index == testimonies.length) {
     index = 0
-    fadeIn()
     assignValues()
   } else {
-    fadeIn()
     assignValues()
   }
 }
@@ -49,10 +42,8 @@ function prevTestimony() {
   index--
   if (index == -1) {
     index = testimonies.length - 1
-    fadeIn()
     assignValues()
   } else {
-    fadeIn()
     assignValues()
   }
 }
