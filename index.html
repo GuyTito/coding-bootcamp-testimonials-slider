@@ -15,13 +15,13 @@
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
-<body class="md:text-[32px] relative">
+<body class="md:text-[32px] relative flex flex-col justify-between h-screen">
   <main>
     <h1 class="uppercase text-center sr-only">Testimonial Slider</h1>
-    <section class="px-8 space-y-16 mt-5">
-      <div class="py-6 px-10 bg-pattern-bg bg-contain bg-no-repeat">
+    <section class="px-8 md:px-28 space-y-12 mt-10 md:mt-16 md:flex flex-row-reverse items-center justify-center">
+      <div class="py-6 md:py-14 px-10 md:px-16 bg-pattern-bg bg-contain bg-no-repeat md:w-1/2 ">
         <img id="avatar" src="" alt="avatar" class="shadow-[-2px_42px_81px_-31px_rgb(0,0,0,0.75)]">
-        <div class="flex justify-center -mt-5">
+        <div class="flex justify-center md:justify-start md:ml-16 -mt-5">
           <div class="flex rounded-full bg-white">
             <button id="prev" class="hover:bg-gray-100 active:bg-gray-200 p-3 pr-5 rounded-l-full">
               <img src="./images/icon-prev.svg" alt="">
@@ -32,20 +32,20 @@
           </div>
         </div>
       </div>
-      <div class=" text-center space-y-5 relative">
-        <img src="./images/pattern-quotes.svg" class="absolute w-14 h-14 left-1/2 -translate-x-1/2 -top-8 " alt="">
-        <p id="statement" class="text-Dark-Blue/90 font-medium relative">
+      <div class="text-center md:text-left space-y-5 md:space-y-10 relative md:w-1/2">
+        <img src="./images/pattern-quotes.svg" class="absolute w-14 h-14 md:w-auto md:h-auto left-1/2 md:left-1/4 -translate-x-1/2 -top-8 md:-top-6">
+        <p id="statement" class="text-Dark-Blue/90 font-light relative md:w-[125%]">
         </p>
       
-        <p class="flex flex-col">
-          <span id="name" class="text-Dark-Blue font-bold"></span>
+        <p class="flex flex-col md:block md:text-xl md:space-x-2">
+          <span id="name" class="text-Dark-Blue font-bold"></span> 
           <sapn id="job" class="text-Grayish-Blue font-light"></sapn>
         </p>
       </div>
     </section>
   </main>
   
-  <footer class="attribution relative mt-2">
+  <footer class="attribution relative mt-2 md:-mt-10">
     <img src="./images/pattern-curve.svg" class="" alt="">
     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full mb-1 text-Grayish-Blue">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:font-bold text-Dark-Blue/60">Frontend Mentor</a>. 
