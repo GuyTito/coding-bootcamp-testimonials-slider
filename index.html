@@ -82,18 +82,18 @@
       // gsap.from(section, {opacity: 0, duration: 1.5})
     }
     fadeIn()
-    let counter = 0
+    let index = 0
     assignValues()
     function assignValues() {
-      statement.innerText = testimonies[counter].text
-      name.innerText = testimonies[counter].name
-      job.innerText = testimonies[counter].job
-      avatar.src = testimonies[counter].image
+      statement.innerText = testimonies[index].text
+      name.innerText = testimonies[index].name
+      job.innerText = testimonies[index].job
+      avatar.src = testimonies[index].image
     }
     function nextTestimony() {
-      counter++
-      if (counter == testimonies.length) {
-        counter = 0
+      index++
+      if (index == testimonies.length) {
+        index = 0
         fadeIn()
         assignValues()
       } else {
@@ -102,9 +102,9 @@
       }
     }
     function prevTestimony() {
-      counter--
-      if (counter == -1) {
-        counter = testimonies.length - 1
+      index--
+      if (index == -1) {
+        index = testimonies.length - 1
         fadeIn()
         assignValues()
       } else {
