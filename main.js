@@ -15,7 +15,7 @@ const testimonies = [
 
 const statement = document.getElementById('statement')
 const avatar = document.getElementById('avatar')
-const name = document.getElementById('name')
+const person = document.getElementById('name')
 const job = document.getElementById('job')
 
 const prev = document.getElementById('prev')
@@ -25,7 +25,7 @@ let index = 0
 assignValues()
 function assignValues() {
   statement.innerText = testimonies[index].text
-  name.innerText = testimonies[index].name
+  person.innerText = testimonies[index].name
   job.innerText = testimonies[index].job
   avatar.src = testimonies[index].image
 }
