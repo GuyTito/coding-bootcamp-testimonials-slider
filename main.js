@@ -24,6 +24,12 @@ const section = document.querySelector('section')
 let index = 0
 assignValues()
 function assignValues() {
+  anime({
+    targets: [statement, avatar, person, job],
+    opacity: [0, 1],
+    easing: 'easeInOutQuad',
+    delay: anime.stagger(300)
+  })
   statement.innerText = testimonies[index].text
   person.innerText = testimonies[index].name
   job.innerText = testimonies[index].job
