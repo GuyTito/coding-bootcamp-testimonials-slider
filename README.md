@@ -6,9 +6,9 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  <!-- - [Screenshot](#screenshot) -->
-  <!-- - [Links](#links) -->
-<!-- - [My process](#my-process) -->
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -22,14 +22,19 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - Navigate the slider using either their mouse/trackpad or keyboard
 
-<!-- ### Screenshot
+### Screenshot
 
-![](./screenshot.jpg) -->
+<details>
+<summary>Screenshot</summary>
 
-<!-- ### Links
+![Screenshot of project](./screenshot.png)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+</details>
+
+### Links
+
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-testimony-slider-using-javascript-and-animejs-Bm03kYJSB)
+- Live Site URL: [Add live site URL here](https://bootcamp-fm.netlify.app/)
 
 ## My process
 
@@ -37,8 +42,9 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Mobile-first workflow
-<!-- - Flexbox -->
-<!-- - CSS Grid -->
+- Tailwindcss
+- Javascript
+- Anime.js
 
 
 ## Author
