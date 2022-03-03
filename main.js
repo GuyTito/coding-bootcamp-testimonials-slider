@@ -53,3 +53,14 @@ next.addEventListener('click', ()=> {
 prev.addEventListener('click', ()=> {
   prevTestimony()
 })
+
+document.addEventListener('keydown', (e)=> {
+  // left arrow key
+  if(e.keyCode == 37){
+    prevTestimony()
+  }
+  // right arrow key
+  if(e.keyCode == 39){
+    nextTestimony()
+  }
+})
